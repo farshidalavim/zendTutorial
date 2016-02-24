@@ -1,15 +1,9 @@
 <?php
-
-/* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 namespace Album;
 
 use Zend\ModuleManager\Feature\AutoloaderProviderInterface;
 use Zend\ModuleManager\Feature\ConfigProviderInterface;
+use Album\Model\Album;
 use Album\Model\AlbumTable;
 use Zend\Db\ResultSet\ResultSet;
 use Zend\Db\TableGateway\TableGateway;
@@ -39,7 +33,9 @@ class Module implements AutoloaderProviderInterface, ConfigProviderInterface {
      * 
      * We’ll then be able to retrieve it in our controller when we need it.
      * 
-     * To configure the ServiceManager, we can either supply the name of the class to be instantiated or a factory (closure or callback) that instantiates the object when the ServiceManager needs it. We start by implementing getServiceConfig() to provide a factory that creates an AlbumTable
+     * To configure the ServiceManager, we can either supply the name of the class to be instantiated or a factory (closure or callback) that instantiates the object when the ServiceManager needs it. 
+     * 
+     * We start by implementing getServiceConfig() to provide a factory that creates an AlbumTable
      * 
      * This method returns an array of factories that are all merged together by the ModuleManager before passing them to the ServiceManager. 
      * 
@@ -53,6 +49,7 @@ class Module implements AutoloaderProviderInterface, ConfigProviderInterface {
      * 
      * This means that instead of instantiating when required, the system clones a previously instantiated object.
      * 
+     * @return array factories
      */
     public function getServiceConfig() {
         return array(

@@ -1,5 +1,4 @@
 <?php
-
 namespace Album\Model;
 
 use Zend\Db\TableGateway\TableGateway;
@@ -33,8 +32,8 @@ class AlbumTable {
      * @param int $id
      * @return Album $row
      */
-    public function getAlbum(int $id) {
-        $rowset = $this->tableGateway->select(array('id' => $id));
+    public function getAlbum($id) {
+        $rowset = $this->tableGateway->select(array('id' => (int) $id));
         $row = $rowset->current();
         
         if(!$row) {
@@ -63,7 +62,7 @@ class AlbumTable {
          }
      }
 
-    public function deleteAlbum(int $id) {
+    public function deleteAlbum($id) {
         $this->tableGateway->delete(array('id' => (int) $id));
     }
 }
