@@ -1,4 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/Applications/MAMP/htdocs/zend/module/Album/Module.php</file>
+            <file>file:/Applications/MAMP/htdocs/zend/module/Album/src/Album/Controller/AlbumController.php</file>
+            <file>file:/Applications/MAMP/htdocs/zend/module/Album/config/module.config.php</file>
+            <file>file:/Applications/MAMP/htdocs/zend/module/Album/src/Album/Model/Album.php</file>
+            <file>file:/Applications/MAMP/htdocs/zend/module/Album/view/album/album/index.phtml</file>
+            <file>file:/Applications/MAMP/htdocs/zend/setup/configs.conf</file>
+            <file>file:/Applications/MAMP/htdocs/zend/module/Album/autoload_classmap.php</file>
+            <file>file:/Applications/MAMP/htdocs/zend/module/Album/src/Album/Model/AlbumTable.php</file>
+        </group>
+    </open-files>
 </project-private>
